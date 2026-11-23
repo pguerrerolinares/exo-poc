@@ -65,7 +65,7 @@ exo write new --dir learnings --title "Por qué SQLite" --tier stable --from not
 # 3. `write` no indexa: lo hace `exo index` (con el plugin, lo refrescan sus hooks).
 exo index
 
-# 4. Recupérala. Default hybrid: carga el modelo de embeddings; `--type fts` es el modo léxico barato.
+# 4. Recupérala. Por defecto, `--type hybrid`: carga el modelo de embeddings; `--type fts` es el modo léxico barato.
 exo search "servidor que mantener"
 exo recall --query "qué base de datos usamos" --limit 3
 ```
